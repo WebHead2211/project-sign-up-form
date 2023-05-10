@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,40 +8,56 @@
     <title>Sign up Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>  
+
+<body>
     <div class="flex-container">
         <div class="flex-child" id="left">
-            
+
         </div>
         <div class="flex-child" id="right">
             <div id="top">
-                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. Sign up <em>now</em> to get started.</p>
                 <p>You <em>know</em> you want to.</p>
             </div>
             <div id="middle">
                 <p>Let's do this!</p>
-                <form action="www.google.com" method="post">
-                    <div class="form-div">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                <form action="www.google.com" method="post" id="form">
+                    <div id="flex-form">
+                        <div class="form-child">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div class="form-child">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </div>
+                        <div class="form-child">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-child">
+                            <label for="number">Phone Number</label>
+                            <input type="tel" id="number" name="number" maxlength="10">
+                        </div>
+                        <div class="form-child">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                        <div class="form-child">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="confirm-password" id="confirm-password" name="confirm-password">
+                        </div>
                     </div>
-                    <div class="form-div">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name">
-                        <label for="number">Phone Number</label>
-                        <input type="number" id="number" name="number">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="confirm-password" id="confirm-password" name="confirm-password">
-                    </div>
-            
                 </form>
+
             </div>
-            <div id="bottom"></div>
+            <div id="bottom">
+
+                <button type="submit" form="form">Create Account</button>
+            </div>
         </div>
-    </div>    
+    </div>
 </body>
+
 </html>
